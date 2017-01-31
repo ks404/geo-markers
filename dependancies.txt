@@ -1,0 +1,9 @@
+1. meteor add iron:router
+
+2.  meteor npm install --save babel-runtime
+
+3. meteor add session
+
+4. meteor add reactive-dict
+
+5. meteor add aslagle:reactive-table

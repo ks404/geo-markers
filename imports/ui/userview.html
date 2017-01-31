@@ -1,0 +1,74 @@
+<template name="userview">
+
+
+    <style>
+       #map {
+        height: 360px;
+        width: 100%;
+       }
+    </style>
+
+<div class = "container-fluid">
+
+<br>
+
+  <div class = "row container-fluid">
+
+
+  <div class = "col-lg-6 col-md-6">
+    <div id="map"></div>
+
+  </div>
+
+
+
+
+
+
+
+
+  <div class = "container-fluid">
+
+    <div class="btn-group">
+      <button type="button" id="price" class="btn btn-secondary">Price</button>
+      <button type="button" id="date" class="btn btn-secondary">Date</button>
+    </div>
+    <br>
+    <br>
+
+
+{{#with mydata}}
+
+{{#each data1}}
+
+
+  
+  <div class="card">
+
+    <div class="card-header">
+      {{date}}
+    </div>
+      <div class="card-block">
+        <h4 class="card-title">{{course}}</h4>
+        <p class="card-text">{{gametype}} for {{players}} players</p>
+        <p class="card-text">{{addr}}</p>
+        <p class="btn btn-primary">${{price}}</p>
+    </div>
+  </div>
+    <br>
+
+
+
+
+{{/each}}
+
+{{/with}}
+
+
+  </div>
+
+  </div>
+
+</div>
+
+</template>
